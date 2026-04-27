@@ -1,0 +1,22 @@
+{
+  "name": "solargraph",
+  "language": "ruby",
+  "displayName": "Ruby",
+  "description": "Solargraph — Ruby LSP with completions, documentation lookup, and diagnostics via RuboCop.",
+  "binary": "solargraph",
+  "extensions": [".rb", ".rake", ".gemspec"],
+  "install": {
+    "gem (recommended)": "gem install solargraph",
+    "bundler": "bundle add solargraph --group development"
+  },
+  "alternatives": {
+    "ruby-lsp": {
+      "install": "gem install ruby-lsp",
+      "note": "Shopify's modern Ruby LSP — faster and more actively maintained."
+    }
+  },
+  "homepage": "https://solargraph.org",
+  "repository": "https://github.com/castwide/solargraph",
+  "license": "MIT",
+  "keywords": ["ruby", "lsp", "language-server"]
+}

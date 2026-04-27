@@ -1,0 +1,30 @@
+{
+  "typescript": {
+    "command": "typescript-language-server",
+    "args": ["--stdio"],
+    "extensionToLanguage": {
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mts": "typescript",
+      ".mjs": "javascript",
+      ".cts": "typescript",
+      ".cjs": "javascript"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "preferences": {
+        "includeInlayParameterNameHints": "all",
+        "includeInlayFunctionParameterTypeHints": true,
+        "includeInlayVariableTypeHints": true,
+        "includeInlayPropertyDeclarationTypeHints": true,
+        "includeInlayFunctionLikeReturnTypeHints": true
+      }
+    },
+    "settings": {},
+    "startupTimeout": 15000,
+    "restartOnCrash": true,
+    "maxRestarts": 3
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "java": {
+    "command": "jdtls",
+    "args": [],
+    "extensionToLanguage": {
+      ".java": "java"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "bundles": [],
+      "settings": {
+        "java": {
+          "format": { "enabled": true },
+          "saveActions": { "organizeImports": true },
+          "completion": {
+            "importOrder": ["java", "javax", "com", "org"]
+          }
+        }
+      }
+    },
+    "settings": {},
+    "startupTimeout": 60000,
+    "restartOnCrash": false,
+    "maxRestarts": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "claudeLsp": {
+    "warnOnMissingBinaries": true,
+    "defaultScope": "project"
+  }
+}

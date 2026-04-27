@@ -1,0 +1,25 @@
+{
+  "ruby": {
+    "command": "solargraph",
+    "args": ["stdio"],
+    "extensionToLanguage": {
+      ".rb": "ruby",
+      ".rake": "ruby",
+      ".gemspec": "ruby"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "solargraph": {
+        "diagnostics": true,
+        "completion": true,
+        "hover": true,
+        "autoformat": false,
+        "formatting": false
+      }
+    },
+    "startupTimeout": 20000,
+    "restartOnCrash": true,
+    "maxRestarts": 3
+  }
+}

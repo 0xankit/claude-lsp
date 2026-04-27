@@ -1,0 +1,16 @@
+{
+  "name": "jdtls",
+  "language": "java",
+  "displayName": "Java",
+  "description": "Eclipse JDT Language Server — completions, navigation, refactoring, and Maven/Gradle project support. Requires JDK 17+.",
+  "binary": "jdtls",
+  "extensions": [".java"],
+  "install": {
+    "brew (macOS)": "brew install jdtls",
+    "manual": "Download from https://download.eclipse.org/jdtls/milestones/ and add bin/ to PATH"
+  },
+  "homepage": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
+  "repository": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
+  "license": "EPL-2.0",
+  "keywords": ["java", "jdt", "lsp", "language-server"]
+}

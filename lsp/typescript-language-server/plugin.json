@@ -1,0 +1,17 @@
+{
+  "name": "typescript-language-server",
+  "language": "typescript",
+  "displayName": "TypeScript / JavaScript",
+  "description": "TypeScript and JavaScript LSP wrapping tsserver — completions, type-checking, refactoring. Covers both .ts and .js files.",
+  "binary": "typescript-language-server",
+  "extensions": [".ts", ".tsx", ".js", ".jsx", ".mts", ".mjs", ".cts", ".cjs"],
+  "install": {
+    "npm (recommended)": "npm install -g typescript-language-server typescript",
+    "pnpm": "pnpm add -g typescript-language-server typescript",
+    "yarn": "yarn global add typescript-language-server typescript"
+  },
+  "homepage": "https://github.com/typescript-language-server/typescript-language-server",
+  "repository": "https://github.com/typescript-language-server/typescript-language-server",
+  "license": "Apache-2.0",
+  "keywords": ["typescript", "javascript", "lsp", "language-server"]
+}

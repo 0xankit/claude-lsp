@@ -1,0 +1,21 @@
+{
+  "css": {
+    "command": "vscode-css-language-server",
+    "args": ["--stdio"],
+    "extensionToLanguage": {
+      ".css": "css",
+      ".scss": "scss",
+      ".sass": "scss",
+      ".less": "less"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "css": { "lint": { "unknownAtRules": "ignore" } },
+      "scss": { "lint": { "unknownAtRules": "ignore" } }
+    },
+    "startupTimeout": 10000,
+    "restartOnCrash": true,
+    "maxRestarts": 3
+  }
+}
