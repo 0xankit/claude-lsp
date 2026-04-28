@@ -4,12 +4,20 @@
   "displayName": "PHP",
   "description": "Intelephense — high-performance PHP LSP with completions, diagnostics, and workspace indexing. Free tier available; premium features require a licence.",
   "binary": "intelephense",
-  "extensions": [".php", ".phtml"],
+  "extensions": [
+    ".php",
+    ".phtml"
+  ],
   "install": {
     "npm (recommended)": "npm install -g intelephense"
   },
   "homepage": "https://intelephense.com",
   "repository": "https://github.com/bmewburn/vscode-intelephense",
   "license": "Proprietary (free tier)",
-  "keywords": ["php", "lsp", "language-server"]
+  "keywords": [
+    "php",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

@@ -4,7 +4,11 @@
   "displayName": "Ruby",
   "description": "Solargraph — Ruby LSP with completions, documentation lookup, and diagnostics via RuboCop.",
   "binary": "solargraph",
-  "extensions": [".rb", ".rake", ".gemspec"],
+  "extensions": [
+    ".rb",
+    ".rake",
+    ".gemspec"
+  ],
   "install": {
     "gem (recommended)": "gem install solargraph",
     "bundler": "bundle add solargraph --group development"
@@ -18,5 +22,10 @@
   "homepage": "https://solargraph.org",
   "repository": "https://github.com/castwide/solargraph",
   "license": "MIT",
-  "keywords": ["ruby", "lsp", "language-server"]
+  "keywords": [
+    "ruby",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

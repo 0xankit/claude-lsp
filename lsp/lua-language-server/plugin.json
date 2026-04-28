@@ -4,7 +4,9 @@
   "displayName": "Lua",
   "description": "Lua LSP server — diagnostics, completions, hover, and built-in Neovim/LÖVE 2D runtime awareness.",
   "binary": "lua-language-server",
-  "extensions": [".lua"],
+  "extensions": [
+    ".lua"
+  ],
   "install": {
     "brew (recommended)": "brew install lua-language-server",
     "scoop (Windows)": "scoop install lua-language-server"
@@ -12,5 +14,10 @@
   "homepage": "https://luals.github.io",
   "repository": "https://github.com/LuaLS/lua-language-server",
   "license": "MIT",
-  "keywords": ["lua", "lsp", "language-server"]
+  "keywords": [
+    "lua",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

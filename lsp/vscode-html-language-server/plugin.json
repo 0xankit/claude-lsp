@@ -4,7 +4,11 @@
   "displayName": "HTML",
   "description": "HTML language server from vscode-langservers-extracted — completions, hover, formatting, and embedded CSS/JS support.",
   "binary": "vscode-html-language-server",
-  "extensions": [".html", ".htm", ".xhtml"],
+  "extensions": [
+    ".html",
+    ".htm",
+    ".xhtml"
+  ],
   "install": {
     "npm (recommended)": "npm install -g vscode-langservers-extracted"
   },
@@ -12,5 +16,10 @@
   "homepage": "https://github.com/hrsh7th/vscode-langservers-extracted",
   "repository": "https://github.com/hrsh7th/vscode-langservers-extracted",
   "license": "MIT",
-  "keywords": ["html", "lsp", "language-server"]
+  "keywords": [
+    "html",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

@@ -4,7 +4,15 @@
   "displayName": "C / C++",
   "description": "LLVM's C/C++ language server — background indexing, clang-tidy diagnostics, code completion, and cross-references.",
   "binary": "clangd",
-  "extensions": [".c", ".h", ".cpp", ".cc", ".cxx", ".hpp", ".hxx"],
+  "extensions": [
+    ".c",
+    ".h",
+    ".cpp",
+    ".cc",
+    ".cxx",
+    ".hpp",
+    ".hxx"
+  ],
   "install": {
     "brew (macOS)": "brew install llvm",
     "apt (Linux)": "sudo apt install clangd",
@@ -14,5 +22,12 @@
   "homepage": "https://clangd.llvm.org",
   "repository": "https://github.com/llvm/llvm-project",
   "license": "Apache-2.0 WITH LLVM-exception",
-  "keywords": ["c", "cpp", "clang", "lsp", "language-server"]
+  "keywords": [
+    "c",
+    "cpp",
+    "clang",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

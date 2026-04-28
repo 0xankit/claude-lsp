@@ -4,7 +4,11 @@
   "displayName": "Python",
   "description": "Python LSP server — diagnostics via pyflakes/pycodestyle, completions, hover, and optional mypy/rope plugins.",
   "binary": "pylsp",
-  "extensions": [".py", ".pyw", ".pyi"],
+  "extensions": [
+    ".py",
+    ".pyw",
+    ".pyi"
+  ],
   "install": {
     "pip (recommended)": "pip install python-lsp-server",
     "pip (all plugins)": "pip install 'python-lsp-server[all]'",
@@ -24,5 +28,10 @@
   "homepage": "https://github.com/python-lsp/python-lsp-server",
   "repository": "https://github.com/python-lsp/python-lsp-server",
   "license": "MIT",
-  "keywords": ["python", "lsp", "language-server"]
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

@@ -4,7 +4,10 @@
   "displayName": "YAML",
   "description": "YAML language server by Red Hat — validation, hover, completion, and JSON Schema support for YAML files.",
   "binary": "yaml-language-server",
-  "extensions": [".yaml", ".yml"],
+  "extensions": [
+    ".yaml",
+    ".yml"
+  ],
   "install": {
     "npm (recommended)": "npm install -g yaml-language-server",
     "brew": "brew install yaml-language-server"
@@ -12,5 +15,10 @@
   "homepage": "https://github.com/redhat-developer/yaml-language-server",
   "repository": "https://github.com/redhat-developer/yaml-language-server",
   "license": "MIT",
-  "keywords": ["yaml", "lsp", "language-server"]
+  "keywords": [
+    "yaml",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

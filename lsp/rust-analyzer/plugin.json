@@ -4,7 +4,9 @@
   "displayName": "Rust",
   "description": "Official Rust language server — completions, inlay hints, refactoring, and clippy integration.",
   "binary": "rust-analyzer",
-  "extensions": [".rs"],
+  "extensions": [
+    ".rs"
+  ],
   "install": {
     "rustup (recommended)": "rustup component add rust-analyzer",
     "brew": "brew install rust-analyzer",
@@ -12,6 +14,11 @@
   },
   "homepage": "https://rust-analyzer.github.io",
   "repository": "https://github.com/rust-lang/rust-analyzer",
-  "license": "Apache-2.0 and MIT",
-  "keywords": ["rust", "lsp", "language-server"]
+  "license": "Apache-2.0 OR MIT",
+  "keywords": [
+    "rust",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }
