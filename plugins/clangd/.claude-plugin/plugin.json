@@ -1,8 +1,10 @@
 {
   "name": "clangd",
+  "version": "1.0.0",
   "language": "c-cpp",
   "displayName": "C / C++",
   "description": "LLVM's C/C++ language server — background indexing, clang-tidy diagnostics, code completion, and cross-references.",
+  "author": { "name": "0xankit" },
   "binary": "clangd",
   "extensions": [
     ".c",

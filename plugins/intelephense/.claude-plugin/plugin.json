@@ -1,8 +1,10 @@
 {
   "name": "intelephense",
+  "version": "1.0.0",
   "language": "php",
   "displayName": "PHP",
   "description": "Intelephense — high-performance PHP LSP with completions, diagnostics, and workspace indexing. Free tier available; premium features require a licence.",
+  "author": { "name": "0xankit" },
   "binary": "intelephense",
   "extensions": [
     ".php",

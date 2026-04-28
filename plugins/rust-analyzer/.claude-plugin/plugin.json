@@ -1,8 +1,10 @@
 {
   "name": "rust-analyzer",
+  "version": "1.0.0",
   "language": "rust",
   "displayName": "Rust",
   "description": "Official Rust language server — completions, inlay hints, refactoring, and clippy integration.",
+  "author": { "name": "0xankit" },
   "binary": "rust-analyzer",
   "extensions": [
     ".rs"

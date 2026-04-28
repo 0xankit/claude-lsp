@@ -1,8 +1,10 @@
 {
   "name": "yaml-language-server",
+  "version": "1.0.0",
   "language": "yaml",
   "displayName": "YAML",
   "description": "YAML language server by Red Hat — validation, hover, completion, and JSON Schema support for YAML files.",
+  "author": { "name": "0xankit" },
   "binary": "yaml-language-server",
   "extensions": [
     ".yaml",

@@ -1,8 +1,10 @@
 {
   "name": "jdtls",
+  "version": "1.0.0",
   "language": "java",
   "displayName": "Java",
   "description": "Eclipse JDT Language Server — completions, navigation, refactoring, and Maven/Gradle project support. Requires JDK 17+.",
+  "author": { "name": "0xankit" },
   "binary": "jdtls",
   "extensions": [
     ".java"

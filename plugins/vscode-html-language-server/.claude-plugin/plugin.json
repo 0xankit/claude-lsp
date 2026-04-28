@@ -1,8 +1,10 @@
 {
   "name": "vscode-html-language-server",
+  "version": "1.0.0",
   "language": "html",
   "displayName": "HTML",
   "description": "HTML language server from vscode-langservers-extracted — completions, hover, formatting, and embedded CSS/JS support.",
+  "author": { "name": "0xankit" },
   "binary": "vscode-html-language-server",
   "extensions": [
     ".html",

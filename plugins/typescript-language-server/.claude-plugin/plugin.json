@@ -1,8 +1,10 @@
 {
   "name": "typescript-language-server",
+  "version": "1.0.0",
   "language": "typescript",
   "displayName": "TypeScript / JavaScript",
   "description": "TypeScript and JavaScript LSP wrapping tsserver — completions, type-checking, refactoring. Covers both .ts and .js files.",
+  "author": { "name": "0xankit" },
   "binary": "typescript-language-server",
   "extensions": [
     ".ts",

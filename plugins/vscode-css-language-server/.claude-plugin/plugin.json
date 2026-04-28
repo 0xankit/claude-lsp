@@ -1,8 +1,10 @@
 {
   "name": "vscode-css-language-server",
+  "version": "1.0.0",
   "language": "css",
   "displayName": "CSS / SCSS / Less",
   "description": "CSS language server from vscode-langservers-extracted — completions, hover, and lint for CSS, SCSS, and Less.",
+  "author": { "name": "0xankit" },
   "binary": "vscode-css-language-server",
   "extensions": [
     ".css",

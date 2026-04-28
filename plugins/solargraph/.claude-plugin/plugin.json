@@ -1,8 +1,10 @@
 {
   "name": "solargraph",
+  "version": "1.0.0",
   "language": "ruby",
   "displayName": "Ruby",
   "description": "Solargraph — Ruby LSP with completions, documentation lookup, and diagnostics via RuboCop.",
+  "author": { "name": "0xankit" },
   "binary": "solargraph",
   "extensions": [
     ".rb",

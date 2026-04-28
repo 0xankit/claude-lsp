@@ -10,22 +10,22 @@
   },
   "plugins": [
     {
-      "name": "lsp/rust-analyzer",
+      "name": "lsp-rust-analyzer",
       "description": "Official Rust language server — completions, inlay hints, refactoring, and clippy integration.",
       "author": { "name": "0xankit" },
       "homepage": "https://rust-analyzer.github.io",
       "repository": "https://github.com/rust-lang/rust-analyzer",
-      "license": "Apache-2.0 AND MIT",
+      "license": "Apache-2.0 OR MIT",
       "keywords": ["rust", "lsp", "language-server"],
       "category": "language-support",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/rust-analyzer"
+        "path": "plugins/rust-analyzer"
       }
     },
     {
-      "name": "lsp/gopls",
+      "name": "lsp-gopls",
       "description": "Official Go language server maintained by the Go team — completions, navigation, diagnostics, and static analysis.",
       "author": { "name": "0xankit" },
       "homepage": "https://pkg.go.dev/golang.org/x/tools/gopls",
@@ -36,11 +36,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/gopls"
+        "path": "plugins/gopls"
       }
     },
     {
-      "name": "lsp/typescript-language-server",
+      "name": "lsp-typescript-language-server",
       "description": "TypeScript and JavaScript LSP wrapping tsserver — completions, type-checking, refactoring. Covers both .ts and .js files.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/typescript-language-server/typescript-language-server",
@@ -51,11 +51,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/typescript-language-server"
+        "path": "plugins/typescript-language-server"
       }
     },
     {
-      "name": "lsp/pylsp",
+      "name": "lsp-pylsp",
       "description": "Python LSP server — diagnostics via pyflakes/pycodestyle, completions, hover, and optional mypy/rope plugins.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/python-lsp/python-lsp-server",
@@ -66,11 +66,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/pylsp"
+        "path": "plugins/pylsp"
       }
     },
     {
-      "name": "lsp/lua-language-server",
+      "name": "lsp-lua-language-server",
       "description": "Lua LSP server — diagnostics, completions, hover, and built-in Neovim/LÖVE 2D runtime awareness.",
       "author": { "name": "0xankit" },
       "homepage": "https://luals.github.io",
@@ -81,11 +81,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/lua-language-server"
+        "path": "plugins/lua-language-server"
       }
     },
     {
-      "name": "lsp/clangd",
+      "name": "lsp-clangd",
       "description": "LLVM's C/C++ language server — background indexing, clang-tidy diagnostics, code completion, and cross-references.",
       "author": { "name": "0xankit" },
       "homepage": "https://clangd.llvm.org",
@@ -96,11 +96,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/clangd"
+        "path": "plugins/clangd"
       }
     },
     {
-      "name": "lsp/jdtls",
+      "name": "lsp-jdtls",
       "description": "Eclipse JDT Language Server — completions, navigation, refactoring, and Maven/Gradle project support. Requires JDK 17+.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
@@ -111,11 +111,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/jdtls"
+        "path": "plugins/jdtls"
       }
     },
     {
-      "name": "lsp/solargraph",
+      "name": "lsp-solargraph",
       "description": "Solargraph — Ruby LSP with completions, documentation lookup, and diagnostics via RuboCop.",
       "author": { "name": "0xankit" },
       "homepage": "https://solargraph.org",
@@ -126,11 +126,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/solargraph"
+        "path": "plugins/solargraph"
       }
     },
     {
-      "name": "lsp/intelephense",
+      "name": "lsp-intelephense",
       "description": "Intelephense — high-performance PHP LSP with completions, diagnostics, and workspace indexing. Free tier available; premium features require a licence.",
       "author": { "name": "0xankit" },
       "homepage": "https://intelephense.com",
@@ -141,11 +141,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/intelephense"
+        "path": "plugins/intelephense"
       }
     },
     {
-      "name": "lsp/vscode-html-language-server",
+      "name": "lsp-vscode-html-language-server",
       "description": "HTML language server from vscode-langservers-extracted — completions, hover, formatting, and embedded CSS/JS support.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/hrsh7th/vscode-langservers-extracted",
@@ -156,11 +156,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/vscode-html-language-server"
+        "path": "plugins/vscode-html-language-server"
       }
     },
     {
-      "name": "lsp/vscode-css-language-server",
+      "name": "lsp-vscode-css-language-server",
       "description": "CSS language server from vscode-langservers-extracted — completions, hover, and lint for CSS, SCSS, and Less.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/hrsh7th/vscode-langservers-extracted",
@@ -171,11 +171,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/vscode-css-language-server"
+        "path": "plugins/vscode-css-language-server"
       }
     },
     {
-      "name": "lsp/yaml-language-server",
+      "name": "lsp-yaml-language-server",
       "description": "YAML language server by Red Hat — validation, hover, completion, and JSON Schema support for YAML files.",
       "author": { "name": "0xankit" },
       "homepage": "https://github.com/redhat-developer/yaml-language-server",
@@ -186,7 +186,7 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/0xankit/claude-lsp",
-        "path": "lsp/yaml-language-server"
+        "path": "plugins/yaml-language-server"
       }
     }
   ]

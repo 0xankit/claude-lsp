@@ -1,8 +1,10 @@
 {
   "name": "lua-language-server",
+  "version": "1.0.0",
   "language": "lua",
   "displayName": "Lua",
   "description": "Lua LSP server — diagnostics, completions, hover, and built-in Neovim/LÖVE 2D runtime awareness.",
+  "author": { "name": "0xankit" },
   "binary": "lua-language-server",
   "extensions": [
     ".lua"

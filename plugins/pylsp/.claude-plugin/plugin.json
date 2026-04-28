@@ -1,8 +1,10 @@
 {
   "name": "pylsp",
+  "version": "1.0.0",
   "language": "python",
   "displayName": "Python",
   "description": "Python LSP server — diagnostics via pyflakes/pycodestyle, completions, hover, and optional mypy/rope plugins.",
+  "author": { "name": "0xankit" },
   "binary": "pylsp",
   "extensions": [
     ".py",
