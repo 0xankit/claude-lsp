@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# lsp-proxy — called by Claude Code for every language entry in .lsp.json.
+# Usage: lsp-proxy <language-key> <binary> [binary-args...]
+#
+# CLAUDE_PLUGIN_OPTION_LANGUAGES is exported by Claude Code from userConfig.
+# Format is a JSON array: ["rust","go"] or empty string when nothing is selected.
+
+set -euo pipefail
+
+LANGUAGE="$1"
+shift
+
+ENABLED="${CLAUDE_PLUGIN_OPTION_LANGUAGES:-}"
+
+# Normalize JSON array ["rust","go"] or plain comma-separated to whitespace-separated tokens.
+NORMALIZED=$(printf '%s' "$ENABLED" | tr '[],"' '    ')
+
+for lang in $NORMALIZED; do
+  if [ "$lang" = "$LANGUAGE" ]; then
+    exec "$@"
+  fi
+done
+
+# Language not enabled — run null LSP so Claude Code sees a clean startup
+# rather than a crash, avoiding spurious error messages.
+if command -v python3 >/dev/null 2>&1; then
+  exec python3 "${CLAUDE_PLUGIN_ROOT}/scripts/null-lsp.py"
+fi
+
+# python3 unavailable — stay alive until Claude Code shuts us down
+exec sleep infinity

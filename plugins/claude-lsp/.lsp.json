@@ -1,0 +1,275 @@
+{
+  "rust": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["rust", "rust-analyzer"],
+    "extensionToLanguage": {
+      ".rs": "rust"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "rust-analyzer": {
+        "checkOnSave": { "command": "clippy" },
+        "inlayHints": { "enable": true }
+      }
+    },
+    "startupTimeout": 30000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "go": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["go", "gopls", "serve"],
+    "extensionToLanguage": {
+      ".go": "go"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "gopls": {
+        "analyses": {
+          "unusedparams": true,
+          "shadow": true
+        },
+        "staticcheck": true,
+        "gofumpt": true,
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true
+        }
+      }
+    },
+    "startupTimeout": 20000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "typescript": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["typescript", "typescript-language-server", "--stdio"],
+    "extensionToLanguage": {
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mts": "typescript",
+      ".mjs": "javascript",
+      ".cts": "typescript",
+      ".cjs": "javascript"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "preferences": {
+        "includeInlayParameterNameHints": "all",
+        "includeInlayFunctionParameterTypeHints": true,
+        "includeInlayVariableTypeHints": true,
+        "includeInlayPropertyDeclarationTypeHints": true,
+        "includeInlayFunctionLikeReturnTypeHints": true
+      }
+    },
+    "settings": {},
+    "startupTimeout": 15000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "python": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["python", "pylsp"],
+    "extensionToLanguage": {
+      ".py": "python",
+      ".pyw": "python",
+      ".pyi": "python"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "pylsp": {
+        "plugins": {
+          "pyflakes": { "enabled": true },
+          "pycodestyle": { "enabled": true },
+          "pylsp_mypy": { "enabled": false },
+          "autopep8": { "enabled": false },
+          "yapf": { "enabled": false }
+        }
+      }
+    },
+    "startupTimeout": 15000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "lua": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["lua", "lua-language-server"],
+    "extensionToLanguage": {
+      ".lua": "lua"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "Lua": {
+        "runtime": { "version": "LuaJIT" },
+        "diagnostics": { "globals": ["vim"] },
+        "workspace": { "checkThirdParty": false },
+        "telemetry": { "enable": false }
+      }
+    },
+    "startupTimeout": 15000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "c-cpp": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["c-cpp", "clangd", "--background-index", "--clang-tidy", "--completion-style=detailed"],
+    "extensionToLanguage": {
+      ".c": "c",
+      ".h": "c",
+      ".cpp": "cpp",
+      ".cc": "cpp",
+      ".cxx": "cpp",
+      ".hpp": "cpp",
+      ".hxx": "cpp"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {},
+    "startupTimeout": 20000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "java": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["java", "jdtls"],
+    "extensionToLanguage": {
+      ".java": "java"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "bundles": [],
+      "settings": {
+        "java": {
+          "format": { "enabled": true },
+          "saveActions": { "organizeImports": true },
+          "completion": {
+            "importOrder": ["java", "javax", "com", "org"]
+          }
+        }
+      }
+    },
+    "settings": {},
+    "startupTimeout": 60000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "ruby": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["ruby", "solargraph", "stdio"],
+    "extensionToLanguage": {
+      ".rb": "ruby",
+      ".rake": "ruby",
+      ".gemspec": "ruby"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "solargraph": {
+        "diagnostics": true,
+        "completion": true,
+        "hover": true,
+        "autoformat": false,
+        "formatting": false
+      }
+    },
+    "startupTimeout": 20000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "php": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["php", "intelephense", "--stdio"],
+    "extensionToLanguage": {
+      ".php": "php",
+      ".phtml": "php"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "storagePath": "${CLAUDE_PLUGIN_DATA}/intelephense"
+    },
+    "settings": {
+      "intelephense": {
+        "files": { "maxSize": 5000000 },
+        "diagnostics": { "enable": true }
+      }
+    },
+    "startupTimeout": 20000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "html": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["html", "vscode-html-language-server", "--stdio"],
+    "extensionToLanguage": {
+      ".html": "html",
+      ".htm": "html",
+      ".xhtml": "html"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "html": {
+        "format": { "enable": true },
+        "suggest": { "html5": true }
+      }
+    },
+    "startupTimeout": 10000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "css": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["css", "vscode-css-language-server", "--stdio"],
+    "extensionToLanguage": {
+      ".css": "css",
+      ".scss": "scss",
+      ".sass": "scss",
+      ".less": "less"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "css": { "lint": { "unknownAtRules": "ignore" } },
+      "scss": { "lint": { "unknownAtRules": "ignore" } }
+    },
+    "startupTimeout": 10000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  },
+  "yaml": {
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
+    "args": ["yaml", "yaml-language-server", "--stdio"],
+    "extensionToLanguage": {
+      ".yaml": "yaml",
+      ".yml": "yaml"
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {
+      "yaml": {
+        "schemas": {
+          "https://json.schemastore.org/github-workflow.json": ".github/workflows/*.yml",
+          "https://json.schemastore.org/github-action.json": ".github/actions/*/action.yml",
+          "https://json.schemastore.org/docker-compose.json": "docker-compose*.yml"
+        },
+        "validate": true,
+        "hover": true,
+        "completion": true
+      }
+    },
+    "startupTimeout": 10000,
+    "restartOnCrash": false,
+    "maxRestarts": 0
+  }
+}

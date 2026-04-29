@@ -1,0 +1,19 @@
+{
+  "name": "claude-lsp",
+  "version": "1.0.0",
+  "description": "Unified LSP plugin for Claude Code. Enables real-time code intelligence for any combination of languages — configure once, activate only what you need.",
+  "author": { "name": "0xankit" },
+  "homepage": "https://github.com/0xankit/claude-lsp",
+  "repository": "https://github.com/0xankit/claude-lsp",
+  "license": "MIT",
+  "keywords": ["lsp", "language-server", "code-intelligence", "multi-language"],
+  "lspServers": "./.lsp.json",
+  "userConfig": {
+    "languages": {
+      "type": "string",
+      "multiple": true,
+      "title": "Enabled languages",
+      "description": "Languages to enable LSP support for. Supported values: rust, go, typescript, python, lua, c-cpp, java, ruby, php, html, css, yaml. The corresponding binary must be installed — see https://github.com/0xankit/claude-lsp for install commands."
+    }
+  }
+}
