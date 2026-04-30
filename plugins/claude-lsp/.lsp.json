@@ -14,8 +14,7 @@
       }
     },
     "startupTimeout": 30000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "go": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -45,8 +44,7 @@
       }
     },
     "startupTimeout": 20000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "typescript": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -73,8 +71,7 @@
     },
     "settings": {},
     "startupTimeout": 15000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "python": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -98,8 +95,7 @@
       }
     },
     "startupTimeout": 15000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "lua": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -118,12 +114,17 @@
       }
     },
     "startupTimeout": 15000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "c-cpp": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
-    "args": ["c-cpp", "clangd", "--background-index", "--clang-tidy", "--completion-style=detailed"],
+    "args": [
+      "c-cpp",
+      "clangd",
+      "--background-index",
+      "--clang-tidy",
+      "--completion-style=detailed"
+    ],
     "extensionToLanguage": {
       ".c": "c",
       ".h": "c",
@@ -137,8 +138,7 @@
     "initializationOptions": {},
     "settings": {},
     "startupTimeout": 20000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "java": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -161,8 +161,7 @@
     },
     "settings": {},
     "startupTimeout": 60000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "ruby": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -184,8 +183,7 @@
       }
     },
     "startupTimeout": 20000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "php": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -205,8 +203,7 @@
       }
     },
     "startupTimeout": 20000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "html": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -225,8 +222,7 @@
       }
     },
     "startupTimeout": 10000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "css": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -244,8 +240,7 @@
       "scss": { "lint": { "unknownAtRules": "ignore" } }
     },
     "startupTimeout": 10000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   },
   "yaml": {
     "command": "${CLAUDE_PLUGIN_ROOT}/bin/lsp-proxy",
@@ -269,7 +264,6 @@
       }
     },
     "startupTimeout": 10000,
-    "restartOnCrash": false,
-    "maxRestarts": 0
+    "maxRestarts": 3
   }
 }

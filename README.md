@@ -45,7 +45,8 @@ Add `claude-lsp` as a known marketplace in your settings file.
   "extraKnownMarketplaces": {
     "claude-lsp": {
       "source": {
-        "git": "https://github.com/0xankit/claude-lsp"
+        "source": "git",
+        "url": "https://github.com/0xankit/claude-lsp.git"
       }
     }
   }
@@ -59,7 +60,8 @@ Add `claude-lsp` as a known marketplace in your settings file.
   "extraKnownMarketplaces": {
     "claude-lsp": {
       "source": {
-        "git": "https://github.com/0xankit/claude-lsp"
+        "source": "git",
+        "url": "https://github.com/0xankit/claude-lsp.git"
       }
     }
   }
