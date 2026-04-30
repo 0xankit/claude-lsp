@@ -1,11 +1,21 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/gen-lsp.py\""
+          }
+        ]
+      }
+    ],
     "ConfigChange": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "echo '[claude-lsp] Language settings changed. Run /reload-plugins to activate the new set of LSP servers.'"
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/gen-lsp.py\""
           }
         ]
       }
